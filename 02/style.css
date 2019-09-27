@@ -13,7 +13,7 @@ main>header, main>article, main>footer {
 
 main>header>h1 {
     text-align: center;
-    text-color: magenta;
+    text-anchor: magenta;
 }
 
 main>article {

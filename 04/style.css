@@ -12,9 +12,9 @@ main {
     grid-template-areas: "nav nav nav"
                          "side art aside"
                          "side art aside";
-    grid-template-columns: 
-    grid-template-rows: 
-    grid-gap: 
+    grid-template-columns: 7 ;
+    grid-template-rows: 6 ;
+    grid-gap: 1 ; 
 }
 
 
@@ -28,17 +28,16 @@ main>* {
 
 aside {
     background-color: rgba(143, 81, 188, 0.3);
-    grid-area:
+    grid-area: aside ;
 }
-
 
 section.sidebar {
     background-color: rgba(150, 112, 36, 0.3);
-    grid-area:
+    grid-area: "side" ;
     display: flex; 
-    flex-direction:
-    justify-content:            /*these last two are optional*/
-    align-items:
+    flex-direction: column ;
+    justify-content: start ;          /*these last two are optional*/
+    align-items: left: ; ;
 }
 
 section.sidebar img {
@@ -54,7 +53,7 @@ nav {
 
 article {
     background-color: rgba(30,30,30,0.4);
-    grid-area:
+    grid-area: "art" ;
     display: grid ;
     grid-template-columns: repeat (5, 1fr);
     grid-template-rows: repeat (5, 1fr);
@@ -76,28 +75,28 @@ article div section {
 
 /* use the grid-row and grid-column values to place the boxes precisely onto the grid */
 #box1 {
-    grid-row:
-    grid-column:
+    grid-row: 2 / 3 ;
+    grid-column: 2 / 3 ;
 }
 
 #box2 {
-    grid-row:
-    grid-column:
+    grid-row: 3 / 4 ;
+    grid-column: 3 / 4 ;
 }
 
 #box3 {
-    grid-row:
-    grid-column:
+    grid-row: 4 / 5 ;
+    grid-column: 4 / 5 ;
 }
 
 #box4 {
-    grid-row:
-    grid-column:
+    grid-row: 5 / 6 ;
+    grid-column: 5 / 6 ;
 }
 
 #box5 {
-    grid-row:
-    grid-column:
+    grid-row: 2 ;
+    grid-column: 5 ;
     background-color: rgba(200,10,10,0.3)
 }
 
@@ -114,7 +113,7 @@ article div section {
         grid-template-rows: 80px 1fr 120px 80px;
     }
     section.sidebar {
-        flex-direction: ;       /* when the screen shrinks, change direction.*/
+        flex-direction: column-reverse ;       /* when the screen shrinks, change direction.*/
     }
     
     section.sidebar img {       /* I'vefilled these in for you; feel free to fool with them if you like. */

@@ -1,3 +1,21 @@
 article {
-    background:  #0000;;
+    background: cadetblue;;
+    display: grid
+    
+}
+header {
+    background: azure
+}
+section.main {
+    margin-left: 25px ;
+    margin-left: 25px ;
+}
+section.sources {
+    margin-left: 25px ;
+    margin-left: 25px ;
+    border-top: 10px
+}
+img {
+    float: left;
+}
 }

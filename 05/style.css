@@ -8,7 +8,7 @@ header {
 }
 section.main {
     margin-left: 25px ;
-    margin-left: 25px ;
+    margin-right: 25px ;
 }
 section.sources {
     margin-left: 25px ;
@@ -17,4 +17,9 @@ section.sources {
 }
 img {
     float: left;
+    border-top: 10px;
+    margin-right: 15px;
+    margin-top: 10px;
+    
+
 }
